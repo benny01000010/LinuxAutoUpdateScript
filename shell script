@@ -1,0 +1,23 @@
+# This script, when paired with a cron job will auto-update your Linux systems on a set interval. 
+# Please make sure to run sudo chmod +x /path/to/this/script to make it executable. 
+
+#!/bin/bash
+
+# Update package lists
+apt update
+
+# Upgrade packages automatically
+apt upgrade -y
+
+echo "Packages updated..."
+
+#Remove old stuff
+apt autoremove -y
+
+echo "Old packages removed. Checking if system reboot is required..."
+
+#Reboot if needed
+if [ -f /var/run/reboot-required ]; then
+    echo "Reboot required due to kernel update or otherwise, rebooting now..."
+    reboot
+fi
