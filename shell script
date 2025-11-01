@@ -1,5 +1,10 @@
 # This script, when paired with a cron job will auto-update your Linux systems on a set interval. 
-# Please make sure to run sudo chmod +x /path/to/this/script to make it executable. 
+# Please make sure to run sudo chmod +x /path/to/this/script.sh to make it executable. 
+
+# Example of a cron job that work work with this script: 0 3 */5 * * /path/to/this/script.sh >> /path/to/this/script.log 2>&1
+
+# The above cron entry will run the script on the 5th, 10th, 15th, 20th, 25th, and 30th of every month at 3 AM.
+# Make sure to log in as root when adding the cron job to avoid "sudo" headaches.
 
 #!/bin/bash
 
