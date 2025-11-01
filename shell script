@@ -16,7 +16,7 @@ apt upgrade -y
 
 echo "Packages updated..."
 
-#Remove old stuff
+#Remove old packages
 apt autoremove -y
 
 echo "Old packages removed. Checking if system reboot is required..."
