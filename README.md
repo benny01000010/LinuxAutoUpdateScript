@@ -2,4 +2,4 @@
 
 # See the "shell script" file for more information. 
 
-#Courtesy of @benny01000010 on GitHub
+Courtesy of @benny01000010 on GitHub. Feel free to contribute!
