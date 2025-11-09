@@ -26,3 +26,6 @@ if [ -f /var/run/reboot-required ]; then
     echo "Reboot required due to kernel update or otherwise, rebooting now..."
     reboot
 fi
+
+echo "No reboot required due to lack of a kernel update or otherwise. Auto-update complete."
+echo "Courtesy of @benny01000010 on GitHub."
